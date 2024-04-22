@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         realmplay improvements
 // @namespace    http://tampermonkey.net/
-// @version      2024.04.22.02
+// @version      2024.04.22.03
 // @description  QoL improvements for reaplmplay.ai
 // @author       CttCJim
 // @match        https://www.realmplay.ai/*
@@ -33,8 +33,9 @@
     }
 
     function cleanup() {
+        console.log('ping');
         //get char portrait
-        var isChat = window.location.toString().includes("chat?") //ie https://www.realmplay.ai/chat?id=12345
+        var isChat = window.location.toString().includes("chat") //ie https://www.realmplay.ai/chat?id=12345
         if(isChat) {
             //get character name and portrait
             /*if(charname=="CttCJim_null_do_not_name_char_this") {
@@ -46,14 +47,15 @@
 
             //});
 
-            var inputBox = document.querySelector('*[placeholder="Write your message here..."]');
+            $('*[placeholder="Write your message here..."]').attr('rows',parameters.chat_input_size);
+            /*var inputBox = document.querySelector('*[placeholder="Write your message here..."]');
             //var showConversations = $("button > span:contains('Show Conversations')");
             //make chat input box larger
             if(inputBox!=null) {
-                if(inputBox.rows!=parameters.chat_input_size) {
-                    inputBox.rows=parameters.chat_input_size;
+                if(inputBox.rows!=4) {
+                    inputBox.rows=4;
                 }
-            }
+            }*/
             //make images react to clicks
             $(".css-9pa8cd").css('cursor','pointer');
             $(".css-9pa8cd").off('click');
