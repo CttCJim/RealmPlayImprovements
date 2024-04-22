@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         realmplay improvements
 // @namespace    http://tampermonkey.net/
-// @version      2024.04.22.01
+// @version      2024.04.22.02
 // @description  QoL improvements for reaplmplay.ai
 // @author       CttCJim
 // @match        https://www.realmplay.ai/*
@@ -236,5 +236,5 @@
     window.span.onclick=function(){window.modal.style.display = "none";};
     $("#img01").click(function(){window.modal.style.display = "none";});
 
-    setInterval(cleanup,100);
+    setInterval(cleanup,1000);
 })();
