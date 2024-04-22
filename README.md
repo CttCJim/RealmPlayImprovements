@@ -1,2 +1,3 @@
 # RealmPlayImprovements
 QoL improvements for realmplay.ai
+This is a script to make the site realmplay.ai more convenient for users. It contains formatting and QoL improvements to make the chat better fit a PC window, as well as some other features such as clicking a portrait to show it in a modal. To install it, you will need the TamperMonkey extension. It's available for Firefox and Chrome. This script is well-commented and open-source, so you know I'm not trying to do anythign sinister. I'm merely making it for my own convenience ans as a personal challenge. Want a custom adblock/de-spam script for another site? Let me know, we'll see what I can do!
