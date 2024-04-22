@@ -9,6 +9,8 @@
 // @grant        none
 // @require https://code.jquery.com/jquery-3.7.1.min.js
 // ==/UserScript==
+//get the latest version of this file from GitHub! https://github.com/CttCJim/RealmPlayImprovements
+//Look me up on Patreon if you love this: https://www.patreon.com/CttCJim
 
 (function() {
     'use strict';
